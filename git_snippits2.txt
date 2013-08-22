@@ -1,0 +1,18 @@
+Merging your work into master
+
+Once we've finished all our commits, pushed our changes, and have decided our topic branch is ready for the primetime it's time to prepare it for getting merged back into master.
+
+The first thing we start with is making sure our topic branch is up to date with master.
+
+Make sure your topic branch is up to date
+
+# make sure master is up to date
+git checkout master
+git pull --rebase
+
+# make sure our topic branch is fully pushed
+git checkout 1234_sales_tax_calculations
+git push
+
+# make sure our topic branch is up to date with master
+git rebase master
